@@ -51,10 +51,10 @@ else:
 
 #Main function to mask message
 def mask(request):
-    if (request && request != ''):
+    if (request and request != ''):
         message = ""
         for character in request:
-            if (character && character != ''):
+            if (character and character != ''):
 
                 
         return message
