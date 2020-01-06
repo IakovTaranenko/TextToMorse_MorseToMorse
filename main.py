@@ -51,15 +51,16 @@ else:
 
 #Main function to mask message
 def mask(request):
-    if (givenMessage && givenMessage != ''):
+    if (request && request != ''):
         message = ""
+
         return message
     else:
         return('Message is invalid, please try again')
 
 #Main function to unmask message
 def unmask(request):
-    if (givenMessage && givenMessage != ''):
+    if (request && request != ''):
         message = ""
         return message
     else:
