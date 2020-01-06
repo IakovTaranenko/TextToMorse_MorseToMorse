@@ -59,7 +59,8 @@ def mask(request):
                 
         return message
     else:
-        return('Message is invalid, please try again')
+        return('ERROR')
+        print('Message is invalid, please try again')
 
 #Main function to unmask message
 def unmask(request):
@@ -71,5 +72,6 @@ def unmask(request):
 
         return message
     else:
-        return('Message is invalid, please try again')
+        return('ERROR')
+        print('Message is invalid, please try again')
 
