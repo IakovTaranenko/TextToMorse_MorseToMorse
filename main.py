@@ -38,4 +38,29 @@ Alphabet = {'A': '.-',
 
 #Define Morse Var
 Morse = {'.': 'Short',
-         '-'; 'Long'}
+         '-': 'Long'}
+
+#Function to send message, initializes the main function
+prompt = imput('Would you like to encrypt your message or decrypt?')
+if (prompt.upper() == 'ENCRYPT'):
+    request = input('Please enter the message you would like to encrypt')
+    mask(request)
+else:
+    request = input('Please enter the message you would like to decrypt')
+    unmask(request)
+
+#Main function to mask message
+def mask(request):
+    if (givenMessage && givenMessage != ''):
+        message = ""
+        return message
+    else:
+        return('Message is invalid, please try again')
+
+#Main function to unmask message
+def unmask(request):
+    if (givenMessage && givenMessage != ''):
+        message = ""
+        return message
+    else:
+        return('Message is invalid, please try again')
