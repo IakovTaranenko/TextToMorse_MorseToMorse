@@ -38,4 +38,4 @@ Alphabet = {'A': '.-',
 
 #Define Morse Var
 Morse = {'.': 'Short',
-         '_': 'Long'}
+         '-'; 'Long'}
