@@ -44,10 +44,10 @@ Morse = {'.': 'Short',
 prompt = imput('Would you like to encrypt your message or decrypt?')
 if (prompt.upper() == 'ENCRYPT'):
     request = input('Please enter the message you would like to encrypt')
-    mask(request)
+    print('Your message is: ' + mask(request))
 else:
     request = input('Please enter the message you would like to decrypt')
-    unmask(request)
+    print('Your message is: ' + unmask(request))
 
 #Main function to mask message
 def mask(request):
@@ -72,3 +72,4 @@ def unmask(request):
         return message
     else:
         return('Message is invalid, please try again')
+
