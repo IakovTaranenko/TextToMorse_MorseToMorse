@@ -53,7 +53,10 @@ else:
 def mask(request):
     if (request && request != ''):
         message = ""
-
+        for character in request
+            if (character && character != ''):
+                
+                
         return message
     else:
         return('Message is invalid, please try again')
@@ -62,6 +65,10 @@ def mask(request):
 def unmask(request):
     if (request && request != ''):
         message = ""
+        for character in request
+            if (character && character != ''):
+
+
         return message
     else:
         return('Message is invalid, please try again')
