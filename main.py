@@ -53,7 +53,7 @@ else:
 def mask(request):
     if (request && request != ''):
         message = ""
-        for character in request
+        for character in request:
             if (character && character != ''):
 
                 
@@ -65,7 +65,7 @@ def mask(request):
 def unmask(request):
     if (request && request != ''):
         message = ""
-        for character in request
+        for character in request:
             if (character && character != ''):
 
 
