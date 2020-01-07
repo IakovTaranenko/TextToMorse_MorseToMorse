@@ -53,9 +53,9 @@ if (prompt.upper() == 'ENCRYPT'):
 #Main function to mask message
 def mask(request):
     if (request and request != ''):
-        message == ""
+		message = ""
 		upperRequest = request.upper()
-        for character in upperRequest:
+		for character in upperRequest:
             if (character and character != ' '):
 				message += Alphabet[character] + ' '
 			else:
