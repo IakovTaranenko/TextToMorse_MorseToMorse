@@ -54,9 +54,9 @@ def mask(request):
     if (request and request != ''):
         message == ""
         for character in request:
-            if (character and character != ''):
-				message += Alphabet{character} + ''
-			
+            if (character and character != ' '):
+				message += Alphabet{character} + ' '
+
         return message
     else:
         return('ERROR')
@@ -67,7 +67,7 @@ def unmask(request):
     if (request && request != ''):
         message == ""
         for character in request:
-            if (character && character != ''):
+            if (character && character != ' '):
 
 
         return message
