@@ -59,7 +59,7 @@ def mask(request):
             if (character and character != ' '):
 				message += Alphabet[character] + ' '
 			else:
-				message
+				message += ' '
         return message
     else:
         return('ERROR')
