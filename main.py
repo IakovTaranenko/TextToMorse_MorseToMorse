@@ -55,7 +55,7 @@ def mask(request):
         message == ""
         for character in request:
             if (character and character != ' '):
-				message += Alphabet{character} + ' '
+				message += Alphabet[character] + ' '
 
         return message
     else:
