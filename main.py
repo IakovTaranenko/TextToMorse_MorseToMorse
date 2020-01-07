@@ -41,12 +41,12 @@ Morse = {'.': 'Short',
          '-': 'Long'}
 
 #Function to send message, initializes the main function
-prompt = input('Would you like to encrypt your message or decrypt?')
+prompt = input('Would you like to encrypt your message or decrypt? ')
 if (prompt.upper() == 'ENCRYPT'):
-    request = input('Please enter the message you would like to encrypt')
+    request = input('Please enter the message you would like to encrypt? ')
     print('Your message is: ' + mask(request))
 '''else:
-    request = input('Please enter the message you would like to decrypt')
+    request = input('Please enter the message you would like to decrypt? ')
     print('Your message is: ' + unmask(request))
 '''
 
