@@ -60,14 +60,14 @@ def mask(request):
 #Main function to unmask message
 def unmask(request):
     if (request and request != ''):
+        upperRequest = request.upper()
         request += ' '
         message = ''
-        upperRequest = request.upper()
         secondary = ''
         for character in upperRequest:
             if (character and character != ' '):
                 cindex = 0
-                current += character
+                secondary += character
             else:
                 cindex += 1
                 if cindex == 2:
