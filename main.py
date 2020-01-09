@@ -46,7 +46,7 @@ Morse = {'.': 'Short',
 #Main function to mask message
 def mask(request):
     if (request and request != ''):
-        message = ""
+        message = ''
         upperRequest = request.upper()
         for character in upperRequest:
             if (character and character != ' '):
@@ -56,22 +56,28 @@ def mask(request):
         return message
     else:
         return('ERROR')
-        print('Message is invalid, please try again')
-'''
+
 #Main function to unmask message
 def unmask(request):
-    if (request && request != ''):
-        message == ""
-        for character in request:
-            if (character && character != ' '):
-
-
+    if (request and request != ''):
+        message = ''
+        upperRequest = request.upper()
+        secondary = ''
+        for character in upperRequest:
+            if (character and character != ' '):
+                cindex = 0
+                current += character
+            else:
+                cindex += 1
+                if cindex == 2:
+                    message += ' '
+                else:
+                    message += list(Alphabet.keys()[list(Alphabet.values()).index(secondary)]
         return message
     else:
         return('ERROR')
-        print('Message is invalid, please try again')
 
-'''
+
 prompt = input('Would you like to encrypt your message or decrypt? ')
 if (prompt.upper() == 'ENCRYPT'):
     request = input('Please enter the message you would like to encrypt? ')
