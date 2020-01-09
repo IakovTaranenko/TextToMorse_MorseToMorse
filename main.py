@@ -75,9 +75,8 @@ def unmask(request):
 prompt = input('Would you like to encrypt your message or decrypt? ')
 if (prompt.upper() == 'ENCRYPT'):
     request = input('Please enter the message you would like to encrypt? ')
-    output = mask(request)
-    print(output)
-'''else:
+    print('Your message is: ' + mask(request))
+else:
     request = input('Please enter the message you would like to decrypt? ')
-    print('Your message is: ' + unmask(request))
-'''
+
+
