@@ -60,6 +60,7 @@ def mask(request):
 #Main function to unmask message
 def unmask(request):
     if (request and request != ''):
+        request += ' '
         message = ''
         upperRequest = request.upper()
         secondary = ''
@@ -72,7 +73,7 @@ def unmask(request):
                 if cindex == 2:
                     message += ' '
                 else:
-                    message += list(Alphabet.keys()[list(Alphabet.values()).index(secondary)]
+                    message += list(Alphabet.keys())[list(Alphabet.values()).index(secondary)]
         return message
     else:
         return('ERROR')
