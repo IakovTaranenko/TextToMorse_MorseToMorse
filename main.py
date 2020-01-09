@@ -76,7 +76,8 @@ prompt = input('Would you like to encrypt your message or decrypt? ')
 if (prompt.upper() == 'ENCRYPT'):
     request = input('Please enter the message you would like to encrypt? ')
     print('Your message is: ' + mask(request))
-else:
+elif (prompt.upper() == 'DECRYPT'):
     request = input('Please enter the message you would like to decrypt? ')
-
+else:
+    print('Command invalid, please try again')
 
